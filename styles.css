@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "TT Lakes";
+  src: url("../fonts/TTLakes-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Lakes";
+  src: url("../fonts/TTLakes-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "TT Lakes";
+  font-weight: 500;
+  color: #1b1c21;
+}
+
+.menu {
+  margin-bottom: 50px;
+  display: flex;
+}
+
+.container {
+  width: 320px;
+  padding: 19px 24px 32px 24px;
+  background: #fff;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+    -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+}
+
+.menu__btn,
+.footer__btn {
+  width: 40px;
+  height: 40px;
+}
+
+.menu__btn_close {
+  margin-right: 17px;
+  background-image: url("../img/close.svg");
+}
+
+.menu__logo {
+  margin-right: 76px;
+}
+
+.menu__btn_search {
+  margin-right: 0;
+  background-image: url("../img/search.svg");
+}
+
+/*main*/
+
+.services-list {
+  font-size: 16px;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.2px;
+  margin-bottom: 268px;
+}
+
+.services-list__item_active::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 116px;
+  color: #41f6d7;
+  width: 4px;
+  height: 32px;
+  background-image: url("../img/highlight.png");
+}
+
+.services-list__item {
+  margin-bottom: 32px;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.services-list__item:hover {
+  opacity: 0.6;
+}
+
+.services-list__item_active {
+  color: #7e7e82;
+}
+
+/*footer*/
+
+.footer__nav {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.footer__btn_call {
+  background-image: url("../img/call.svg");
+}
+
+.footer__btn_chat {
+  background-image: url("../img/chat.svg");
+}
+
+.footer__btn_profile {
+  background-image: url("../img/profile.svg");
+}
+
+.footer__e-mail {
+  font-size: 16px;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.2px;
+  margin-bottom: 12px;
+}
+
+.footer__number {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px; /* 133.333% */
+  letter-spacing: -0.6px;
+  margin-bottom: 40px;
+}
+
+.footer__langs {
+  display: flex;
+  gap: 7px;
+  text-transform: uppercase;
+}
+
+.footer__langs_item_grey {
+  color: #7e7e82;
+}
