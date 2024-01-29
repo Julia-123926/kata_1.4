@@ -55,16 +55,14 @@ body {
     -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
 }
 
-.menu__btn,
-.footer__btn {
+.btn {
   width: 40px;
   height: 40px;
   opacity: 1;
   transition: opacity 0.3s ease-out;
 }
 
-.menu__btn:hover,
-.footer__btn:hover {
+.btn:hover {
   opacity: 0.7;
 }
 
